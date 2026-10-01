@@ -64,8 +64,10 @@ app.get("/api/produits/:id", function(req, res) {
     );
 });
 
-app.listen(3000, function() {
-    console.log("Serveur démarré sur le port 3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function() {
+    console.log("Serveur démarré sur le port " + PORT);
 });
 
 app.post("/api/produits", function(req, res) {
