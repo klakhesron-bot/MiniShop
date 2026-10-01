@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniShop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MiniShop</h1>
+
+        <nav>
+           <a href="index.html" class="active">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="panier.html">Panier</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <h2>Bienvenue sur MiniShop</h2>
+
+            <p>
+                Découvrez nos produits et passez votre commande
+                facilement.
+            </p>
+
+            <a href="produits.html">Voir les produits</a>
+        </section>
+
+
+        <section>
+            <h2>Nos produits</h2>
+            <div class="products">
+
+            <article class="product-card">
+                <img src="images/tshirt.jpg" alt="T-shirt classique"  
+                >
+                <h3>T-shirt classique</h3>
+                <p>8 000 FCFA</p>
+                <button class="add-to-cart" 
+                data-product="T-shirt classique" 
+                data-price="8000">Ajouter au panier</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/casquette.avif" alt="casquette" >
+                <h3>Casquette</h3>
+                <p>5 000 FCFA</p>
+                <button class="add-to-cart" 
+                data-product="Casquette" 
+                data-price="5000">Ajouter au panier</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/sac.jpg" alt="sac à main">
+                <h3>Sac à main</h3>
+                <p>12 000 FCFA</p>
+                <button class="add-to-cart" 
+                data-product="Sac à main"
+                data-price="12000">Ajouter au panier</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/chaussures.jpg" alt="chaussures" >
+                <h3>Chaussures</h3>
+                <p>25 000 FCFA</p>
+                <button class="add-to-cart" 
+                data-product="chaussures"
+                 data-price="25000">Ajouter au panier</button>
+            </article>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 MiniShop</p>
+    </footer>
+   <script src="js/script.js"></script>
+    
+</body>
+
+</html>

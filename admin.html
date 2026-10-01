@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - MiniShop</title>
+    <style>
+    .admin-product img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+    #products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+    <h1>Gestion des produits</h1>
+    <h2>Ajouter un produit</h2>
+
+<form id="product-form">
+
+    <input
+        type="text"
+        id="product-name"
+        placeholder="Nom du produit"
+        required
+    >
+
+    <input
+        type="number"
+        id="product-price"
+        placeholder="Prix"
+        required
+    >
+
+    <input
+        type="text"
+        id="product-image"
+        placeholder="Chemin de l'image"
+        required
+    >
+
+    <button type="submit">Ajouter le produit</button>
+
+</form>
+
+    <div id="products-container"></div>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>
